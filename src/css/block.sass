@@ -1,0 +1,21 @@
+.block
+    display: block
+    background-color: $color-blue-light
+
+    &__content
+        padding: 20px 56px 19px 64px
+        margin: 0 auto
+        max-width: 1265px
+    
+    &__angle
+        position: relative
+        &:after
+            position: absolute
+            content: ''
+            top: 100%
+            left: 50%
+            margin-left: -5px
+            border: 10px solid transparent
+            border-top-color: currentColor
+            z-index: 100
+

@@ -1,0 +1,151 @@
+.current
+    background-color: $color-blue
+    color: $color-blue
+    
+    .block__content
+        color: $text-color-blue-dark
+        padding-bottom: 40px
+
+    h2        
+        color: white
+        text-align: center
+        margin-bottom: 57px
+        font-size: 50px
+        @media (max-width: 740px)
+            font-size: 30px
+            margin-bottom: 37px
+            
+            
+    &__btn
+        position: relative
+        box-sizing: border-box
+        height: 40px
+        width: 10.5%
+        float: left
+        text-align: center
+        margin: 0px 1% 20px 1%
+        font-size: 15px
+        @media (max-width: 1260px)
+            width: 18.5%
+            margin: 0px 3% 20px 3%
+        @media (max-width: 740px)
+            width: 43.5%
+            
+
+        &.active
+            color: $color-blue
+            background-color: white
+    
+    &__planner
+        & + &
+            margin-top: 50px
+        
+
+        &_head
+            color: $text-color-blue-light-lighter
+            background-color: $btn-color-blue-dark-darker
+            padding: 20px 123px 23px 35px
+            @media (max-width: 1110px)
+                padding: 20px 20px 23px 35px
+                
+            h3
+                display: inline-block
+                width: 35%
+                font-size: 30px
+                margin: 0
+                @media (max-width: 1110px)
+                    display: block
+                    text-align: center
+                    width: 100%
+                    margin-bottom: 20px
+                    
+            .exp
+                display: inline-block
+                text-align: right
+                width: 65%
+                @media (max-width: 1110px)
+                    display: block
+                    width: 100%
+                    text-align: center
+                
+                    
+
+                span
+                    display: inline-block
+                    font-size: 20px
+                    @media (max-width: 740px)
+                        display: block
+                        margin-bottom: 10px
+                        
+                span + span
+                    margin-left: 90px
+                    @media (max-width: 740px)
+                        margin-left: 0
+                                            
+
+                .date
+                    position: relative
+                    &:after
+                        position: absolute
+                        content: ''
+                        width: 28px
+                        height: 28px
+                        background-image: url(/img/date.png)
+                        margin-left: -85px
+                        margin-top: -3px
+                .link
+                     &:after
+                        position: absolute
+                        content: ''
+                        width: 24px
+                        height: 24px
+                        background-image: url(/img/link.png)
+                        margin-left: -120px
+                        margin-top: -3px
+
+        &_body
+            color: white            
+            background-color: $text-color-blue
+            padding: 20px 65px 35px 30px
+
+            h3
+                font-size: 30px
+            
+
+        &_foot
+            background-color: white
+            padding: 30px 30px 20px 30px
+            position: relative
+
+            p
+                color: #388dcb
+                font-size: 25px
+                margin: 0
+                @media (max-width: 1050px)
+                    text-align: center
+
+            &-btn
+                width: 215px
+                height: 65px
+                color: $text-color-blue-light-lighter
+                text-transform: none
+                font-size: 32px
+                background-color: $btn-color-blue-dark-darker
+                border-color: $btn-color-blue-dark-darker
+                text-align: center
+                border-radius: 10px
+                position: absolute
+                right: 30px
+                bottom: 7px
+                @media (max-width: 1050px)
+                    position: static
+                    display: block
+                    width: 100%
+                    margin-top: 20px
+    p
+        &.more
+            margin: 0
+            margin-top: 40px
+            text-align: center
+            font-size: 30px
+            color: white  

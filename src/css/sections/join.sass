@@ -1,0 +1,59 @@
+.join
+    background-color: $color-purple
+    color: $color-purple
+    
+    .block__content
+        padding-bottom: 80px
+
+    & h2
+        color: $text-color-blue-light
+        text-align: center
+        font-size: 50px
+        text-transform: uppercase
+        @media (max-width: 1030px)
+            font-size: 30px
+
+    &__btn
+        width: 185px
+        height: 56px
+        font-size: 17px
+
+
+    &__part
+        width: 50%
+        float: left
+        text-align: center
+        @media (max-width: 690px)
+            float: none
+            width: 100%
+
+        & + &
+            position: relative
+            @media (max-width: 690px)
+                margin-top: 30px
+            &:before
+                position: absolute
+                content: ''
+                left: 0
+                top: 46px
+                height: 230px
+                width: 1px
+                background-color: white
+                opacity: .2
+                @media (max-width: 1030px)
+                    height: 100px
+                @media (max-width: 690px)
+                    content: none
+    
+    &__img
+        height: 388px
+        line-height: 388px
+        margin-bottom: 40px
+        @media (max-width: 1030px)
+            line-height: 200px
+            height: 200px
+
+    & img
+        vertical-align: middle
+        @media (max-width: 1030px)
+            height: 200px

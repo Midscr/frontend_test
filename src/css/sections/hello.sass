@@ -1,0 +1,61 @@
+.hello
+    position: relative
+    background-color: $color-blue-light
+    
+    &:before, &:after
+        content: ''
+        position: absolute
+        width: 100%
+
+    &:after
+        background-color: #d0fbfc
+        height: 35px
+        bottom: 0px
+
+    &:before
+        background-color: #aaf5f9
+        height: 15px
+        bottom: 35px
+
+    & .block__content
+        position: relative
+        z-index: 2
+        height: 540px
+        padding-bottom: 0
+        background-image: url(/img/pic1.jpg)
+        background-position: center center
+        background-repeat: no-repeat
+        @media (max-width: 970px)
+            background-image: none
+            height: initial
+            padding-bottom: 40px 
+            
+
+    h2
+        color: $text-color-purple
+        font-size: 42px
+    
+    &__text
+        width: 464px
+        color: $text-color-pink-dark
+        font-size: 30px
+        @media (max-width: 970px)
+            width: 100%
+            text-align: center
+    
+    &__x
+        position: relative
+        padding: 2px
+
+        & + &
+            margin-left: 7px
+
+        &:before
+            position: absolute
+            content: ''
+            border: 2px solid $text-color-purple
+            border-radius: 1000px
+            top: 7px
+            left: -2px
+            width: 19px
+            height: 27px
